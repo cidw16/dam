@@ -1,0 +1,56 @@
+/*
+  LO QUE CAMBIA POR ACADEMIA (junto con img/ y academia.json). Una academia nueva = copiar esta carpeta,
+  cambiar el logo en img/, estos valores y los campos de academia.json (ver LEEME.md).
+
+  Los valores son los de la app: mobile/src/tema/tokens.ts (claro y oscuro) y docs/SistemaVisual.md
+  (--barra y --sobre-barra, Artículo 5; espaciado --esp-*). El azul es el del PRODUCTO, no el de la
+  academia: la identidad de la academia va en el nombre y el logo. El ámbar queda reservado a lo
+  pendiente (--pendiente*), igual que en la app y el panel.
+*/
+:root {
+  color-scheme: light dark;
+
+  --fondo: #F5F6F8;
+  --superficie: #FFFFFF;
+  --tinta: #1F2A37;
+  --tenue: #5F6B7A;
+  --linea: #DCE1E8;
+  --acento: #2860B3;
+  /* La banda: UN degradado muy leve, un poco más claro a la izquierda y un poco más oscuro a la derecha
+     (Roberto, 2026-11-13). El mismo par para todas las bandas azules; solo se cambian estos dos valores.
+     Blanco sobre cada extremo: 5,99:1 y 9,13:1 (claro); 11,14:1 y 13,92:1 (oscuro). */
+  --barra-ini: #2A62B4;
+  --barra-fin: #1B468C;
+  --barra: linear-gradient(100deg, var(--barra-ini), var(--barra-fin));
+  --barra-solida: var(--barra-ini);
+  --sobre-barra: #FFFFFF;
+  --pendiente: #794402;
+  --pendiente-fondo: #FBF1E6;
+  --pendiente-borde: #794402;
+
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --radio: 12px;
+  --radio-chico: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #12161D;
+    --superficie: #1B212A;
+    --tinta: #E8ECF1;
+    --tenue: #9AA5B3;
+    --linea: #2E3643;
+    --acento: #6FA5FF;
+    --barra-ini: #1B3A70;
+    --barra-fin: #122B57;
+    --sobre-barra: #FFFFFF;
+    --pendiente: #F0B27D;
+    --pendiente-fondo: #2A2118;
+    --pendiente-borde: #F0B27D;
+  }
+}

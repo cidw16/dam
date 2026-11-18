@@ -1,0 +1,8 @@
+{
+  "nombre_comercial": "La academia de Robert",
+  "nombre_legal": null,
+  "correo_academia": null,
+  "correo_plataforma": "roberto.delcid@gmail.com",
+  "simbolo": "img/simbolo.png",
+  "pendiente_de_andy": ["nombre_legal", "correo_academia"]
+}
